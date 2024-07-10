@@ -1,14 +1,11 @@
+import PageShell from "./components/PageShell";
 
-function App() {
-
+const App = () => {
   return (
-    <>
-    <p>
-      Hello
-    </p>
-      
-    </>
-  )
-}
+    <PageShell>
+      <h1> golemec </h1>
+    </PageShell>
+  );
+};
 
-export default App
+export default App;
