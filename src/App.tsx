@@ -1,9 +1,11 @@
 import PageShell from "./components/PageShell";
-
+import HomePage from "./pages/HomePage";
+import useTitleRoulette from "./hooks/useTitleRoulette";
 const App = () => {
+  useTitleRoulette();
   return (
     <PageShell>
-      <h1> golemec </h1>
+      <HomePage />
     </PageShell>
   );
 };

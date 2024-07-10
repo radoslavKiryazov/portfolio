@@ -14,7 +14,7 @@ const PageShell: FC<PageShellProps> = (props) => {
   return (
     <Wrapper>
       <ShellImage src={terminalBezel} />
-      <ShellImage src={scanLines} />
+      <ScanLines src={scanLines} />
       <Content>{children}</Content>
     </Wrapper>
   );
@@ -28,6 +28,12 @@ const Content = styled.div(
     margin-left: 8rem;
     font-size: 20px;
     margin-bottom: 5rem;
+  `
+);
+
+const ScanLines = styled(ShellImage)(
+  () => css`
+    opacity: 80%;
   `
 );
 
