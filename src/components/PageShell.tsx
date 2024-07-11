@@ -28,6 +28,7 @@ const Content = styled.div(
     margin-left: 8rem;
     font-size: 20px;
     margin-bottom: 5rem;
+    background-color: lightblue;
   `
 );
 

@@ -1,13 +1,17 @@
+import List from "../components/List";
+
 const HomePage = () => {
   return (
     <div>
-      <ul>
-        <li>Home</li>
-        <li>Projects</li>
-        <li>Contact</li>
-        <li>NIGGA</li>
-      </ul>
+      <List items={mainMenu}/>
     </div>
   );
 };
 export default HomePage;
+
+
+const mainMenu = [
+  'Home',
+  'Projects',
+  'Contact'
+]
