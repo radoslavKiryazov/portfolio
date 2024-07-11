@@ -1,8 +1,9 @@
 import { useEffect } from "react";
 const useTitleRoulette = () => {
   useEffect(() => {
+    console.log(titles.length);
     const interval = setInterval(() => {
-      const randomIndex = Math.floor(Math.random() * 50);
+      const randomIndex = Math.floor(Math.random() * 43);
       document.title = titles[randomIndex];
     }, 1000);
 

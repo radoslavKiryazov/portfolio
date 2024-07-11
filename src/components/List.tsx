@@ -14,10 +14,10 @@ const List = (props: ListProps) => {
         <li
           onKeyDown={(event) => handleKeyDown(event, index)}
           tabIndex={index === focusedIndex ? 0 : -1}
+          key={index}
         >
           <ListItem
             title={item}
-            key={index}
             ref={(item) => item && (listItemRefs.current[index] = item)}
           />
         </li>
