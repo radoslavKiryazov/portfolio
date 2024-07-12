@@ -13,7 +13,7 @@ const useListNavigation = () => {
   };
 
   const handleKeyDown = (
-    event: KeyboardEvent<HTMLLIElement>,
+    event: KeyboardEvent<HTMLAnchorElement>,
     index: number
   ): void => {
     if (movementKeys.down.includes(event.key.toLocaleLowerCase())) {
